@@ -41,7 +41,7 @@ class Chronometer extends Component {
     render() {
         return(
             <div className='container'>
-                <img src={require('./assets/cronometro.png')} className='img'/>
+                <img src={require('../../assets/cronometro.png')} className='img'/>
                 <a className='timer'>{this.state.time.toFixed(1)}</a>
                 <div className='controls'>
                     <a className='control' onClick={this.start}>{this.state.start_button}</a>

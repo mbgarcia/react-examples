@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Chronometer from './components/Chronometer/';
+import Nutrition from './components/Nutrition'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
@@ -11,7 +12,8 @@ ReactDOM.render(
     <Router>
       <Switch>
         <Route exact path='/' component={App}/>
-        <Route exact path='/Chronometer' component={Chronometer}/>
+        <Route path='/Chronometer' component={Chronometer}/>
+        <Route path='/Nutrition' component={Nutrition} />
       </Switch>
     </Router>
     
